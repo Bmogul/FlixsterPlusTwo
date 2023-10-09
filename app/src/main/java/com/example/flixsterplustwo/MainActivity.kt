@@ -32,7 +32,8 @@ class MainActivity : AppCompatActivity() {
 
         val apiEndPoints = mutableMapOf<String,String>()
         apiEndPoints["Popular"] = "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1"
-//        apiEndPoints[]
+        apiEndPoints["Top Rated"] = "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1"
+        apiEndPoints["Upcoming"] = "https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1"
 
         fetchMovieData(apiEndPoints)
     }
